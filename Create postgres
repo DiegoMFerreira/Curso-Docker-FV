@@ -1,1 +1,9 @@
 docker run --name curso_pg -e POSTGRES_DB=curso_docker -e POSTGRES_USER=docker_usr -e POSTGRES_PASSWORD=docker_pwd -p 5432:5432 -d postgres
+
+
+	#--name curso_pg: Nomeia o container como curso_pg.
+	#	-e POSTGRES_DB=curso_docker: Cria o banco de dados com o nome curso_docker.
+	#	-e POSTGRES_USER=docker_usr: Define o nome do usuário como docker_usr.
+	#	-e POSTGRES_PASSWORD=docker_pwd: Define a senha do usuário como docker_pwd.
+	#	-p 5432:5432: Mapeia a porta do PostgreSQL no container para a porta 5432 no host, para que o desenvolvedor possa acessar o banco.
+	#	-d postgres: Executa o container em segundo plano usando a imagem oficial do PostgreSQL.
