@@ -1,0 +1,9 @@
+docker run --name curso_mysql -e MYSQL_DATABASE=docker_db -e MYSQL_USER=docker_usr -e MYSQL_PASSWORD=docker_pwd -e MYSQL_ROOT_PASSWORD=root_pwd -p 3306:3306 -d mysql
+
+	#--name curso_mysql: Nome do container como curso_mysql.
+	#	-e MYSQL_DATABASE=docker_db: Cria o banco de dados com o nome docker_db.
+	#	-e MYSQL_USER=docker_usr: Define o nome do usuário como docker_usr.
+	#	-e MYSQL_PASSWORD=docker_pwd: Define a senha do usuário como docker_pwd.
+	#	-e MYSQL_ROOT_PASSWORD=root_pwd: Define a senha do usuário root.
+	#	-p 3306:3306: Faz o mapeamento da porta do MySQL no container para a porta 3306 no host.
+	#	-d mysql: Executa o container em segundo plano usando a imagem oficial do MySQL.
